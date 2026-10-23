@@ -1,0 +1,11 @@
+{
+  "request_rows": 48533,
+  "policy_event_rows": 97066,
+  "paired_streams": 90,
+  "policy_runs": 180,
+  "per_scenario": {
+    "fast": 36572,
+    "medium": 9578,
+    "slow": 2383
+  }
+}

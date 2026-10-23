@@ -1,0 +1,48 @@
+[
+  {
+    "scenario": "fast",
+    "n": 30,
+    "attack_none_mean": 1199.0666666666666,
+    "attack_lock_mean": 98.16666666666667,
+    "reduction_mean_pct": 91.81300442375327,
+    "reduction_min_pct": 91.25,
+    "reduction_max_pct": 92.16666666666667,
+    "normal_blocked": 553,
+    "normal_offered": 600,
+    "normal_correct_blocked": 497,
+    "normal_correct": 542,
+    "normal_success_none": 542,
+    "normal_success_lock": 45
+  },
+  {
+    "scenario": "medium",
+    "n": 30,
+    "attack_none_mean": 299.26666666666665,
+    "attack_lock_mean": 85.86666666666666,
+    "reduction_mean_pct": 71.30493083563744,
+    "reduction_min_pct": 68.01346801346801,
+    "reduction_max_pct": 73.24414715719064,
+    "normal_blocked": 443,
+    "normal_offered": 600,
+    "normal_correct_blocked": 400,
+    "normal_correct": 542,
+    "normal_success_none": 542,
+    "normal_success_lock": 142
+  },
+  {
+    "scenario": "slow",
+    "n": 30,
+    "attack_none_mean": 59.43333333333333,
+    "attack_lock_mean": 47.6,
+    "reduction_mean_pct": 19.90467445725132,
+    "reduction_min_pct": 8.333333333333334,
+    "reduction_max_pct": 28.333333333333332,
+    "normal_blocked": 162,
+    "normal_offered": 600,
+    "normal_correct_blocked": 143,
+    "normal_correct": 542,
+    "normal_success_none": 542,
+    "normal_success_lock": 399
+  }
+]
+PASS: 90 paired streams / 180 policy runs; all requests accounted for

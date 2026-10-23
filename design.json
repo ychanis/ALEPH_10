@@ -1,0 +1,16 @@
+{
+  "title": "로그인 실패 후 일시 차단 정책의 효과와 정상 사용자 차단: 사건 기반 모의실험",
+  "author": "영찬", "date": "2026-10-23", "scope": "synthetic simulation only",
+  "hypothesis": "동일한 로그인 요청 자료에서 5회 연속 실패 후 30초 동안 계정을 차단하면, 차단하지 않을 때보다 600초 동안 실제 검사되는 공격 요청 수가 줄어든다.",
+  "repetitions": 30, "seed_start": 2026102301, "duration_seconds": 600,
+  "scenarios": {"fast": 0.5, "medium": 2.0, "slow": 10.0},
+  "normal_requests": 20, "normal_error_probability": 0.1,
+  "attack_success_probability": 0, "threshold": 5, "lock_seconds": 30,
+  "counter_reset": "on success or when lock expires; blocked requests do not extend lock",
+  "tie_order": "time, attacker before normal, request id",
+  "primary_outcome": "mean within-run relative reduction in checked attack requests; each scenario reported separately",
+  "falsification": "in any prespecified scenario the mean checked attack count is not lower under lockout",
+  "lock_scope": "one account shared by attack and normal requests",
+  "request_time": "synthetic time; no real waiting, network, password hashing, or external target",
+  "design_changes": "none after first execution"
+}

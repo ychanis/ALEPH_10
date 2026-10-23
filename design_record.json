@@ -1,0 +1,8 @@
+{
+  "record_type": "before first execution; local record, not independent preregistration",
+  "utc": "2026-10-23T00:22:29.857646+00:00",
+  "sha256": {
+    "design.json": "5feea4d9ff7f47cc94a1cad6d15a81e04d6ff1a8429008992d879884d24c066a",
+    "run.py": "1406d770c14b5ce3fa31e6a5a9b9604f79c696a7e788e4bcf81751fbceb2f960"
+  }
+}
